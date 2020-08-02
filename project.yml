@@ -21,3 +21,17 @@ targets:
       - target: iOSProjectTemplate
       - carthage: Quick
       - carthage: Nimble
+
+schemes:
+  iOSProjectTemplate:
+    build:
+      targets:
+        iOSProjectTemplate: all
+        iOSProjectTemplateTests: [test]
+    test:
+      targets:
+        - iOSProjectTemplateTests
+      config: CI
+      gatherCoverageData: true
+
+        
