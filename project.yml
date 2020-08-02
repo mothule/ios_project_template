@@ -1,6 +1,7 @@
 name: iOSProjectTemplate
 options:
   bundleIdPrefix: com.mothule
+  postGenCommand: pod install
 
 configs:
   Debug: debug
