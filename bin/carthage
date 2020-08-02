@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+mint run carthage $1
