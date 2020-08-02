@@ -1,0 +1,14 @@
+name: iOSProjectTemplate
+options:
+  bundleIdPrefix: com.mothule
+targets:
+  iOSProjectTemplate:
+    type: application
+    platform: iOS
+    sources: ios_project_template
+  iOSProjectTemplateTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: ios_project_templateTests
+    dependencies:
+      - target: iOSProjectTemplate
