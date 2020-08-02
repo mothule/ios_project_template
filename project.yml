@@ -1,6 +1,13 @@
 name: iOSProjectTemplate
 options:
   bundleIdPrefix: com.mothule
+
+configs:
+  Debug: debug
+  CI: debug
+  Beta: release
+  AppStore: release
+
 targets:
   iOSProjectTemplate:
     type: application
