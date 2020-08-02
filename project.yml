@@ -1,5 +1,6 @@
 name: iOSProjectTemplate
 options:
+  minimumXcodeGenVersion: 2.16.0
   bundleIdPrefix: com.mothule
   postGenCommand: pod install
 
