@@ -16,12 +16,26 @@ targets:
     type: application
     platform: iOS
     sources: ios_project_template
+    dependencies:
+      - target: Core
   iOSProjectTemplateTests:
     type: bundle.unit-test
     platform: iOS
     sources: ios_project_templateTests
     dependencies:
       - target: iOSProjectTemplate
+      - carthage: Quick
+      - carthage: Nimble
+  Core:
+    type: framework
+    platform: iOS
+    sources: Core
+  CoreTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: CoreTests
+    dependencies:
+      - target: Core
       - carthage: Quick
       - carthage: Nimble
 
