@@ -9,8 +9,7 @@ options:
 configs:
   Debug: debug
   CI: debug
-  Beta: release
-  AppStore: release
+  Release: release
 
 targets:
   iOSProjectTemplate:
