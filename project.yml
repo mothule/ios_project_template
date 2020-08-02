@@ -12,3 +12,5 @@ targets:
     sources: ios_project_templateTests
     dependencies:
       - target: iOSProjectTemplate
+      - carthage: Quick
+      - carthage: Nimble
