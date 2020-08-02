@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import ios_project_template
+@testable import iOSProjectTemplate
 
 class ios_project_templateTests: XCTestCase {
 
