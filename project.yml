@@ -12,18 +12,18 @@ configs:
   Release: release
 
 targets:
-  iOSProjectTemplate:
+  App:
     type: application
     platform: iOS
-    sources: ios_project_template
+    sources: App
     dependencies:
       - target: Core
-  iOSProjectTemplateTests:
+  AppTests:
     type: bundle.unit-test
     platform: iOS
-    sources: ios_project_templateTests
+    sources: AppTests
     dependencies:
-      - target: iOSProjectTemplate
+      - target: App
       - carthage: Quick
       - carthage: Nimble
   Core:
@@ -40,14 +40,15 @@ targets:
       - carthage: Nimble
 
 schemes:
-  iOSProjectTemplate:
+  App:
     build:
       targets:
-        iOSProjectTemplate: all
-        iOSProjectTemplateTests: [test]
+        App: all
+        AppTests: [test]
     test:
       targets:
-        - iOSProjectTemplateTests
+        - AppTests
+        - CoreTests
       config: CI
       gatherCoverageData: true
 
