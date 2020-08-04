@@ -7,8 +7,12 @@
 //
 
 import SwiftUI
+import Core
 
 struct ContentView: View {
+    func hoge(){
+        HogeLogic().hoge(lhs: 1, rhs: 1)
+    }
     var body: some View {
         Text("Hello, World!")
     }
