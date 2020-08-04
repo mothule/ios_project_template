@@ -3,6 +3,7 @@ options:
   minimumXcodeGenVersion: 2.16.0
   groupSortPosition: top
   generateEmptyDirectories: true
+  carthageExecutablePath: mint run Carthage/Carthage
   bundleIdPrefix: com.mothule
   postGenCommand: pod install
 
@@ -18,6 +19,7 @@ targets:
     sources: App
     dependencies:
       - target: Core
+      - carthage: Alamofire
     postbuildScripts:
       - name: Run SwiftLint
         script: |
