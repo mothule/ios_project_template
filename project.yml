@@ -40,7 +40,7 @@ targets:
       - carthage: Nimble
 
 schemes:
-  App:
+  iOSProjectTemplate:
     build:
       targets:
         App: all
