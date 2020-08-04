@@ -18,6 +18,15 @@ targets:
     sources: App
     dependencies:
       - target: Core
+    postbuildScripts:
+      - name: Run SwiftLint
+        script: |
+                if [[ -f ./Mintfile ]] ; then
+                  mint run swiftlint
+                else
+                  echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
+                fi
+
   AppTests:
     type: bundle.unit-test
     platform: iOS

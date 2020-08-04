@@ -1,0 +1,47 @@
+# 無効にするLintルール一覧
+disabled_rules:
+  - force_cast
+  - trailing_whitespace
+  - type_name
+  - notification_center_detachment
+  - trailing_comma
+
+# Lintルール除外ディレクトリ
+excluded:
+  - Pods
+  - Carthage
+  - vendor
+
+# 1行の長さ
+line_length:
+  - 190 # Warning
+
+# 縦の空白行
+vertical_whitespace:
+  max_empty_lines: 2
+
+# タプルのパラメータ数
+large_tuple:
+  - 4
+
+# 関数の長さ
+function_body_length:
+  - 60
+
+# 変数名について
+identifier_name:
+  allowed_symbols: "_"
+  min_length: 3
+  excluded: # 頻発＋プロジェクトにおいてスタンダードと化した略称は入れる. しかし、大抵は略さずきちんタイプする
+    - id
+    - vc
+
+# デフォルトルール以外から採用するルール
+opt_in_rules:
+  - overridden_super_call
+  - operator_usage_whitespace
+  - private_outlet
+  - explicit_init
+  - object_literal
+  - prohibited_super_call
+  - redundant_nil_coalescing
